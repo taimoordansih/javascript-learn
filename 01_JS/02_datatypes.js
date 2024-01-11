@@ -9,3 +9,22 @@ console.log( 3
     3 ) // code readability should be high
     
 console.log("danish")
+
+let name = "dasnih"
+let age = 18
+let islogedin = false
+let state;
+
+/*
+---------------------premitive data types--------------------
+number => 2 the power 53
+string => ""
+boolean => true/false
+null => standalone value
+undefined =>
+symbol => for uniqueness
+
+---------------------non premitive data type------------------
+object
+*/
+console.log(typeof null); // typeof null is object
