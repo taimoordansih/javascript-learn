@@ -29,3 +29,33 @@ const myFunction = function (params) {
     console.log("hello world");
 }
 myFunction()
+
+console.log(names[0]);
+
+//***********************************************************************************/
+//+++++++++++++++++++++++++++++Memory types++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++=>Stack+++++++++++++=>Heep
+
+// Stack(premitive),    Heep(NoN Premitive)
+//stack mein orignal value mein change nahi hota sirf copy milti hai
+//For Example
+let = myYoutubeName = "hitesh Chuhdary"
+let anotherYoutuberName = myYoutubeName
+anotherYoutuberName = "chai aur code"
+console.log(anotherYoutuberName);
+console.log(myYoutubeName);
+
+//**************************************************************************************************/
+//**************************Heep**************************
+
+let user1 = {
+    name : "danish",
+    age :18,
+    isLoggedIn : false
+}
+
+let user2 = user1
+
+user2.name = "taimoor"
+console.log(user1.name);
+console.log(user2.name);
