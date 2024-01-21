@@ -60,4 +60,43 @@ console.log("sliced array",myArry.slice(1,3));
 console.log("array after sliced", myArry);
 
 console.log("spliced array",myArry.splice(1,3));
-console.log("array after spliced ", myArry);
+console.log("array after spliced ", myArry); 
+
+const marvel_Heros = ["iron man", "captan america", "thor"]
+const dc_Heros = ["super man", "batman", "aquaman"]
+
+// marvel_Heros.push(dc_Heros)
+// console.log(marvel_Heros); it gives array into aray
+
+// const all_heros = marvel_Heros.concat(dc_Heros)
+// console.log(all_heros); it joins two arays and returns a new array
+
+const all_heros = [...marvel_Heros, ...dc_Heros]
+console.log(all_heros); // The spread operator is a feature of JavaScript 
+//introduced with ES6 that gives you access to the insides of an iterable object. 
+//An “iterable object” is anything you can iterate over item by item, 
+//such as arrays, objects literals, and strings. 
+//These kinds of JavaScript types can be traversed in some sequential fashion
+
+//+++++++++++++++++++++Flat Opretors+++++++++++++++++++++++++++++
+
+const arrIntoArr =[1, 2, 3, 4, [5, 8], [3, 4, 2, [3, 6, 6]]]
+const flatArr = arrIntoArr.flat(Infinity)
+console.log(flatArr);
+
+// kai bar data object ya string mein ki surat mein
+console.log(Array.isArray("danish"));
+console.log(Array.from("danish"));
+// from google To convert an ordinary object that's not iterable or array-like to 
+// an array (by enumerating its property keys, values, or both),
+// use Object.keys() , Object.values() , or Object.entries() .
+// To convert an async iterable to an array, use Array.fromAsync() . 
+// Array.from() never creates a sparse array.
+
+// console.log(Object.keys({name : "danish"}));
+
+const score1 = 100
+const score2 = 200
+const score3 = 300
+console.log(Array.of(score1, score2, score3));
+
