@@ -1,5 +1,7 @@
 // ============================Array=============================
+
 const myArry = [0,  1,  2,  3,  4,  5]
+
 // const heros = ["super man", " batman", " aqua man"]
 // const myArr2 = new Array("danish", " ramish",  2,  8,  4)
 
